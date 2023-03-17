@@ -21,7 +21,7 @@ app.get("/",function (req,res) {
     res.render("list",{listTitle:day,listitems:items});
 });
 
-app.get("/work",function(req,res){
+app.get("/work",function(req,res){ 
     res.render("list",{listTitle:"Work List",listitems:workitems});
 })
 // app.post("/work",function(req,res){
