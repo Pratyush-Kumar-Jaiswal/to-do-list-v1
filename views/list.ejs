@@ -1,0 +1,21 @@
+<%-include("partials/header")-%>
+        <div class="box" id="heading">
+                <h1><%=listTitle%></h1>
+        </div>
+        <div class="box">
+        
+                <% for(var i=0;i<listitems.length; i++){ %>
+                        <div class="item">
+                                <input type="checkbox">
+                                <p><%=listitems[i]%></p>
+                        </div>
+                        
+                <%}%>
+                <form class="item" action="/" method="post">
+                        <input type="text" name="new_item" id="new_item" placeholder="New Item" autocomplete="off">
+                        <button type="submit" name="list" value="<%=listTitle%>">+</button>
+                </form>    
+                
+        </div>
+<%-include("partials/footer")-%>
+       
